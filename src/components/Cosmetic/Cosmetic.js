@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import SingleCos from '../SingleCos/SingleCos';
+import './Cosmetic.css'
  
 /*  const Cosmetics =[
      {id: 1, name: 'Alta', price: 100},
@@ -20,9 +21,11 @@ const Cosmetic = () => {
     return (
         <div>
             <h1>This is my product</h1>
+            <div className='products'> 
              {
                  Cosmetics.map(cosmetic => <SingleCos key= {cosmetic.id} cosmetic= {cosmetic}></SingleCos>)
              }
+            </div>
         </div>
     );
 };
